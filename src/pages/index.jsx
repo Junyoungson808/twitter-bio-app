@@ -33,9 +33,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="h-full w-full">
-        <h1>Twitter Bio Generator</h1>
-        <div>
+      {/* Main Screen */}
+      <main className="h-full w-full ">
+      <div class="flex flex-col items-center place-content-center bg-transparent bg-slate-500">
+        <h1 class="lg:mt-10 font-bold tracking-tight text-indigo-500" >Twitter Bio Generator</h1>
+        <div class="mt-10">
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -58,6 +60,7 @@ export default function Home() {
             <button>Submit</button>
           </form>
           {output && <div>{output}</div>}
+        </div>
         </div>
       </main>
     </>
