@@ -15,7 +15,7 @@ export default function Home() {
       alert("Description cannot be empty");
       return;
     }
-    
+
     const JSONData = JSON.stringify({ description: description });
 
     const response = await fetch("/api/ai_request", {
@@ -41,7 +41,7 @@ export default function Home() {
       {/* Main Screen */}
       <main className="h-full w-full display flex">
         <div className="m-auto mt-60 justify-center text-center">
-          <h1 className="text-5xl font-bold text-indigo-400 mb-10 drop-shadow-xl">
+          <h1 className="text-5xl font-bold text-blue-500 mb-10 drop-shadow-xl">
             Twitter Bio Generator
           </h1>
           <div>
@@ -67,7 +67,7 @@ export default function Home() {
                     setDescription(e.target.value);
                   }}
                 />
-                <button class="bg-green-500 hover:bg-green-600 text-white font-bold px-4 rounded">
+                <button class="bg-blue-500 hover:bg-green-600 text-white font-bold px-4 rounded">
                   Submit
                 </button>
               </div>
